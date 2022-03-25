@@ -6,13 +6,10 @@ namespace ConsoleApp1
     {
         public static void Run()
         {
-            while (true)
-            {
-                Console.Title = DateTime.Now.ToString("dd.MM.yyyy HH:mm.ss.ffff");
+            var timer_thread = new Thread(TimerUpdate);
 
-                Thread.Sleep(250);
-            }
 
+            timer_thread.Start();
 
             Console.WriteLine("Программа ожидает ввода пользователя");
 
@@ -20,5 +17,17 @@ namespace ConsoleApp1
 
             Console.WriteLine("Программа завершена!");
         }
+
+        private static void TimerUpdate()
+        {
+            while (true)
+            {
+                Console.Title = DateTime.Now.ToString("dd.MM.yyyy HH:mm.ss.ffff");
+
+                Thread.Sleep(250);
+            }
+        }
     }
+
+    
 }
