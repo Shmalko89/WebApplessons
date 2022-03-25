@@ -27,7 +27,7 @@ namespace ConsoleApp1
             Console.WriteLine("Программа завершена!");
         }
 
-        private static bool _UpdateTitleTimer = true;
+        private static volatile bool _UpdateTitleTimer = true;
 
         private static void TimerUpdate()
         {
