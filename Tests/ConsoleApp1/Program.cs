@@ -6,4 +6,6 @@ using ConsoleApp1;
 //current_thread.Priority = ThreadPriority.Lowest;
 
 //ThreadTests.Run();
-CriticalSectionTests.Run2();
+//CriticalSectionTests.Run2();
+
+
