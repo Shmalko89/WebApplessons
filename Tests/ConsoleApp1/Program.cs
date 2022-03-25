@@ -8,4 +8,4 @@ using ConsoleApp1;
 //ThreadTests.Run();
 //CriticalSectionTests.Run2();
 
-
+ThreadPoolTests.Run();
