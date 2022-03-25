@@ -19,6 +19,9 @@ namespace ConsoleApp1
             Console.ReadLine();
         }
 
+        private static readonly object __SyncRoot = new object();
+
+
         private static void Print(string Message,int Count, int Timeout = 20)
         {
             for(var i = 0; i < Count; i++)
@@ -26,10 +29,17 @@ namespace ConsoleApp1
                 if(Timeout > 0)
                 Thread.Sleep(Timeout);
 
-                Console.Write("ThreadID: {0}", Environment.CurrentManagedThreadId);
-                Console.Write("[{0}] ", i);
-                Console.WriteLine(Message);
-                
+
+                lock (__SyncRoot)
+                {
+                    #region Критическая секция
+                    Console.Write("ThreadID: {0}", Environment.CurrentManagedThreadId);
+                    Console.Write("[{0}] ", i);
+                    Console.WriteLine(Message);
+                    #endregion
+                }
+
+
             }
         }
     }
