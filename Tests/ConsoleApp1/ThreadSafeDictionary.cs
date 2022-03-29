@@ -27,9 +27,11 @@ internal static class ThreadSafeDictionary
     private static readonly ConcurrentDictionary<string, byte[]> __HashBuffer = new();
 
     private static byte[] ComputeHashBuffered(string str) => __HashBuffer.GetOrAdd(str, s => ComputeHash(s));
-
+  
     private static byte[] ComputeHash(string str)
     {
+
+
         if(str is null) throw new ArgumentNullException(nameof(str));
         if (str.Length == 0) return new byte[32];
 

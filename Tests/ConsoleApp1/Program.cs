@@ -9,4 +9,5 @@ using ConsoleApp1;
 //CriticalSectionTests.Run2();
 
 //SynhronysationTests.Run();
-ThreadSafeDictionary.Run();
+//ThreadSafeDictionary.Run();
+parallel.Run(); 
