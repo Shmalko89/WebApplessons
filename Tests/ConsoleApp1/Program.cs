@@ -10,4 +10,4 @@ using ConsoleApp1;
 
 //SynhronysationTests.Run();
 //ThreadSafeDictionary.Run();
-parallel.Run(); 
+//parallel.Run(); 
