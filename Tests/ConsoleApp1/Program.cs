@@ -8,4 +8,5 @@ using ConsoleApp1;
 //ThreadTests.Run();
 //CriticalSectionTests.Run2();
 
-SynhronysationTests.Run();
+//SynhronysationTests.Run();
+ThreadSafeDictionary.Run();
