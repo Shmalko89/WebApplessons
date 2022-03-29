@@ -11,3 +11,4 @@ using ConsoleApp1;
 //SynhronysationTests.Run();
 //ThreadSafeDictionary.Run();
 //parallel.Run(); 
+await AsyncAwait.Run2();
