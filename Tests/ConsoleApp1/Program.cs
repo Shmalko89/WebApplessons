@@ -1,14 +1,5 @@
-﻿using System.Threading;
-using ConsoleApp1;
+﻿using ConsoleApp1;
 
-//var current_thread = Thread.CurrentThread;
+LogExample.Run();
 
-//current_thread.Priority = ThreadPriority.Lowest;
-
-//ThreadTests.Run();
-//CriticalSectionTests.Run2();
-
-//SynhronysationTests.Run();
-//ThreadSafeDictionary.Run();
-//parallel.Run(); 
-await AsyncAwait.Run2();
+Console.ReadLine();
