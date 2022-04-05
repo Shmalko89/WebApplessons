@@ -1,5 +1,6 @@
 ﻿using ConsoleApp1;
 
-LogExample.Run();
+//LogExample.Run();
+BuilderPatternExample.Run();
 
 Console.ReadLine();
